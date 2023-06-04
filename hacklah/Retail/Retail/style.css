@@ -1,0 +1,155 @@
+:root {
+  --pink: rgb(234, 107, 107);
+  --light-pink: rgba(234, 107, 107, 0.2);
+  --light-blue: #acc5e5a6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  text-align: center;
+  font-size: 4rem;
+  color: #333;
+  padding: 1rem;
+  margin: 2rem 0;
+  background: var(--light-blue);
+  border-radius: 1rem;
+}
+
+.heading span {
+  color: var(--pink);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #333;
+  color: #fff;
+  padding: 0.9rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.7rem;
+  transition: background 0.2s linear;
+}
+
+.btn:hover {
+  background: var(--pink);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 2rem 9%;
+  background: var(--light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 3rem;
+  color: #333;
+  font-weight: bolder;
+}
+
+header .logo span {
+  color: var(--pink);
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: rgb(26, 28, 29);
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+header .navbar a:hover {
+  color: var(--pink);
+}
+
+header .icons a {
+  font-size: 2.5rem;
+  color: #333;
+  margin-left: 1.5rem;
+  transition: color 0.2s linear;
+}
+
+header .icons a:hover {
+  color: var(--pink);
+}
+
+section #cont {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+#cardd {
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 0.2rem #acc5e5;
+}
+
+#button {
+  border-radius: 20px;
+}
+
+#cardd:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  background: var(--pink);
+  transform: scale(1.05);
+}
